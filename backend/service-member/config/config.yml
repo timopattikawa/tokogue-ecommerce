@@ -1,0 +1,9 @@
+database:
+  name: "tokogue-member"
+  user: "postgres"
+  password: "tokoguemember"
+  host: "localhost"
+  port: 5431
+server:
+  port: 9000
+  host: "localhost"
