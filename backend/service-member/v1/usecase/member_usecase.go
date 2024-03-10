@@ -1,7 +1,7 @@
 package usecase
 
 import (
-	"fmt"
+	"encoding/json"
 	"log"
 	"service-member/internal/domain"
 	"service-member/internal/dto"
@@ -48,12 +48,17 @@ func (m MemberUsecaseImpl) SignUpMember(request dto.MemberSignUpRequest) (dto.Me
 	}
 
 	messageToKafka := dto.SendOtpKafka{
-		Otp:   util.GenerateOTP(),
+		Type:  "REGISTRATION",
 		Email: request.Email,
 	}
 	log.Println(messageToKafka)
 
-	sendToKafka := m.kafkaMessage.ProduceMessage(fmt.Sprintf("%s", messageToKafka))
+	marshal, err := json.Marshal(messageToKafka)
+	if err != nil {
+		log.Printf("Potential fail send message notification becase error marshal json {%s}", err)
+	}
+
+	sendToKafka := m.kafkaMessage.ProduceMessage(marshal)
 	if !sendToKafka {
 		log.Printf("Fail send to kafka with message : {%s}", messageToKafka)
 	}
@@ -72,6 +77,23 @@ func (m MemberUsecaseImpl) SignInMember(request dto.MemberSignInRequest) (dto.Me
 	if !isValidPassword {
 		return dto.MemberAuthResponse{}, exception.BadRequestError{Message: "Invalid Password please check again!!"}
 	}
+
+	messageToKafka := dto.SendOtpKafka{
+		Type:  "LOGIN",
+		Email: request.Email,
+	}
+	log.Println(messageToKafka)
+
+	marshal, err := json.Marshal(messageToKafka)
+	if err != nil {
+		log.Printf("Potential fail send message notification becase error marshal json {%s}", err)
+	}
+
+	sendToKafka := m.kafkaMessage.ProduceMessage(marshal)
+	if !sendToKafka {
+		log.Printf("Fail send to kafka with message : {%s}", messageToKafka)
+	}
+	log.Printf("Send kafka with message : {%s}", messageToKafka)
 
 	return dto.MemberAuthResponse{Token: member.AccessKey}, nil
 }

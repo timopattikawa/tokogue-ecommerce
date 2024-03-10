@@ -1,6 +1,6 @@
 package dto
 
 type SendOtpKafka struct {
-	Otp   string `json:"otp"`
+	Type  string `json:"type"`
 	Email string `json:"email"`
 }

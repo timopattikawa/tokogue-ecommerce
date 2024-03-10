@@ -20,7 +20,7 @@ func main() {
 	memberRepository := repository.NewMemberRepository(postgres)
 	jwtGenerator := util.NewJWTGenerator()
 	passwordGenerator := util.NewPasswordGenerator()
-	kafkaConfig := util.NewKafkaConfig("localhost:9092", "tokoguemessage", 3)
+	kafkaConfig := util.NewKafkaConfig("localhost:9092", "tokoguemessage")
 	memberUsecase := usecase.NewUsecaseMember(memberRepository, jwtGenerator, passwordGenerator, kafkaConfig)
 	memberController := controller.NewMemberController(memberUsecase)
 
