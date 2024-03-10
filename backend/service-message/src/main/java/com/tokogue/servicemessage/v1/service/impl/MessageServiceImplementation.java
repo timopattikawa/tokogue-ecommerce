@@ -2,8 +2,10 @@ package com.tokogue.servicemessage.v1.service.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tokogue.servicemessage.util.EmailUtil;
+import com.tokogue.servicemessage.v1.domain.Message;
 import com.tokogue.servicemessage.v1.dto.EmailDTO;
 import com.tokogue.servicemessage.v1.enumeration.NotificationAuthEmail;
+import com.tokogue.servicemessage.v1.repository.MessageRepository;
 import com.tokogue.servicemessage.v1.service.MessageService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -17,6 +19,7 @@ public class MessageServiceImplementation implements MessageService {
 
     private final EmailUtil emailUtil;
     private final ObjectMapper mapper;
+    private final MessageRepository messageRepository;
 
     @KafkaListener(topics = "tokoguemessage", groupId = "message")
     @Override
@@ -40,6 +43,11 @@ public class MessageServiceImplementation implements MessageService {
             } else if(emailDTO.getType().equals(NotificationAuthEmail.LOGIN_EMAIL.getType())) {
                 emailUtil.sendEmail(emailDTO.getEmail(), NotificationAuthEmail.LOGIN_EMAIL);
             }
+
+            Message newMessage = new Message();
+            newMessage.setEmail(emailDTO.getEmail());
+            newMessage.setRequestType(emailDTO.getType());
+            messageRepository.save(newMessage);
         }catch (Exception e) {
             log.info(e.getMessage());
             throw new RuntimeException();
