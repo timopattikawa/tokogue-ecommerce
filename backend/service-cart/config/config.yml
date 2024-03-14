@@ -1,0 +1,8 @@
+database:
+  host: localhost
+  port: 5433
+  name: tb_tokogue_cart
+  username: tokogue
+  password: tokogue123
+server:
+  port: 9001

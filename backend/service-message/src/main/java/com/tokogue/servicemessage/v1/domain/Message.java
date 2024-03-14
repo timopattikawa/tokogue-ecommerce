@@ -20,5 +20,4 @@ public class Message {
     @Field(name = "created_at")
     private Date createAt;
 
-
 }

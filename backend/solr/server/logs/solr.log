@@ -1,0 +1,298 @@
+2024-03-12 02:57:44.156 INFO  (main) [c: s: r: x: t:] o.e.j.s.Server jetty-10.0.19; built: 2023-12-15T20:38:32.477Z; git: 8492d1c78f122bb30cce20aecfa07e7283facd47; jvm 17.0.10+7-Ubuntu-122.04.1
+2024-03-12 02:57:44.477 WARN  (main) [c: s: r: x: t:] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2024-03-12 02:57:44.507 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2024-03-12 02:57:44.515 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.5.0
+2024-03-12 02:57:44.515 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2024-03-12 02:57:44.515 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /home/timopattikawa/Documents/tokogue-ecommerce/backend/solr
+2024-03-12 02:57:44.515 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2024-03-12T02:57:44.515796390Z
+2024-03-12 02:57:44.519 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: /home/timopattikawa/Documents/tokogue-ecommerce/backend/solr/server/logs/jvm_crash_12340.log
+2024-03-12 02:57:44.545 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Solr Home: /home/timopattikawa/Documents/tokogue-ecommerce/backend/solr/server/solr (source: system property: solr.solr.home)
+2024-03-12 02:57:44.558 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrXmlConfig Loading solr.xml from /home/timopattikawa/Documents/tokogue-ecommerce/backend/solr/server/solr/solr.xml
+2024-03-12 02:57:44.598 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/home/timopattikawa/Documents/tokogue-ecommerce/backend/solr/lib]
+2024-03-12 02:57:45.212 INFO  (main) [c: s: r: x: t:] o.a.s.u.t.SimplePropagator Always-on trace id generation enabled.
+2024-03-12 02:57:45.438 WARN  (main) [c: s: r: x: t:] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2024-03-12 02:57:45.440 WARN  (main) [c: s: r: x: t:] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2024-03-12 02:57:45.588 INFO  (main) [c: s: r: x: t:] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/timopattikawa/Documents/tokogue-ecommerce/backend/solr/server/solr
+2024-03-12 02:57:45.589 INFO  (main) [c: s: r: x: t:] o.a.s.c.CorePropertiesLocator Cores are: [TOKOGUE_PRODUCT]
+2024-03-12 02:57:45.631 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.9.0
+2024-03-12 02:57:45.706 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.s.IndexSchema Schema name=default-config
+2024-03-12 02:57:45.826 WARN  (main) [c: s: r: x: t:] o.g.j.m.i.MessagingBinders A class jakarta.activation.DataSource for a default provider MessageBodyWriter<jakarta.activation.DataSource> was not found. The provider is not available.
+2024-03-12 02:57:45.998 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2024-03-12 02:57:45.998 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.c.CoreContainer Creating SolrCore 'TOKOGUE_PRODUCT' using configuration from instancedir /home/timopattikawa/Documents/tokogue-ecommerce/backend/solr/server/solr/TOKOGUE_PRODUCT, trusted=true
+2024-03-12 02:57:46.039 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.c.SolrCore Opening new SolrCore at [/home/timopattikawa/Documents/tokogue-ecommerce/backend/solr/server/solr/TOKOGUE_PRODUCT], dataDir=[/home/timopattikawa/Documents/tokogue-ecommerce/backend/solr/server/solr/TOKOGUE_PRODUCT/data/]
+2024-03-12 02:57:46.146 INFO  (main) [c: s: r: x: t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-03-12 02:57:46.304 INFO  (main) [c: s: r: x: t:] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@655a5d9c{solr-jetty-context.xml,/solr,file:///home/timopattikawa/Documents/tokogue-ecommerce/backend/solr/server/solr-webapp/webapp/,AVAILABLE}{/home/timopattikawa/Documents/tokogue-ecommerce/backend/solr/server/solr-webapp/webapp}
+2024-03-12 02:57:46.313 INFO  (main) [c: s: r: x: t:] o.e.j.s.RequestLogWriter Opened /home/timopattikawa/Documents/tokogue-ecommerce/backend/solr/server/logs/2024_03_12.request.log
+2024-03-12 02:57:46.317 INFO  (main) [c: s: r: x: t:] o.e.j.s.AbstractConnector Started ServerConnector@2b95e48b{HTTP/1.1, (http/1.1, h2c)}{127.0.0.1:8983}
+2024-03-12 02:57:46.318 INFO  (main) [c: s: r: x: t:] o.e.j.s.Server Started Server@376a312c{STARTING}[10.0.19,sto=0] @3170ms
+2024-03-12 02:57:46.513 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-03-12 02:57:46.531 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2024-03-12 02:57:46.531 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2024-03-12 02:57:46.545 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2024-03-12 02:57:46.545 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2024-03-12 02:57:46.657 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/timopattikawa/Documents/tokogue-ecommerce/backend/solr/server/solr/TOKOGUE_PRODUCT/conf
+2024-03-12 02:57:46.669 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.s.DirectSolrSpellChecker init: {accuracy=0.5, maxQueryFrequency=0.01, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal}
+2024-03-12 02:57:46.675 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-03-12 02:57:46.677 INFO  (searcherExecutor-13-thread-1-processing-TOKOGUE_PRODUCT) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2024-03-12 02:57:46.677 INFO  (searcherExecutor-13-thread-1-processing-TOKOGUE_PRODUCT) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2024-03-12 02:57:46.683 INFO  (searcherExecutor-13-thread-1-processing-TOKOGUE_PRODUCT) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-03-12 02:57:49.974 INFO  (qtp693267461-20-localhost-4) [c: s: r: x: t:localhost-4] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=6
+2024-03-12 02:57:49.976 INFO  (qtp693267461-18-localhost-5) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-5] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1710212269953} status=0 QTime=9
+2024-03-12 02:57:49.984 INFO  (qtp693267461-27-localhost-2) [c: s: r: x: t:localhost-2] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=17
+2024-03-12 02:57:49.987 INFO  (qtp693267461-21-localhost-3) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-3] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1710212269952} status=0 QTime=19
+2024-03-12 02:57:50.053 INFO  (qtp693267461-23-localhost-6) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-6] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1710212269952} status=0 QTime=14
+2024-03-12 02:57:53.053 INFO  (qtp693267461-26-localhost-8) [c: s: r: x: t:localhost-8] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 02:57:53.055 INFO  (qtp693267461-19-localhost-9) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-9] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710212273039} status=0 QTime=0
+2024-03-12 02:57:53.063 INFO  (qtp693267461-24-localhost-7) [c: s: r: x: t:localhost-7] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=10
+2024-03-12 02:57:55.895 INFO  (qtp693267461-45-localhost-10) [c: s: r: x: t:localhost-10] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 02:57:55.895 INFO  (qtp693267461-23-localhost-12) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-12] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710212273039} status=0 QTime=0
+2024-03-12 02:57:55.902 INFO  (qtp693267461-19-localhost-11) [c: s: r: x: t:localhost-11] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=7
+2024-03-12 02:57:55.927 INFO  (qtp693267461-25-localhost-13) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-13] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1710212273039} hits=1000 status=0 QTime=29
+2024-03-12 02:58:01.353 INFO  (qtp693267461-24-localhost-15) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-15] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1710212269953} status=0 QTime=0
+2024-03-12 02:58:01.353 INFO  (qtp693267461-27-localhost-16) [c: s: r: x: t:localhost-16] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 02:58:01.353 INFO  (qtp693267461-26-localhost-14) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-14] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1710212269952} status=0 QTime=2
+2024-03-12 02:58:01.360 INFO  (qtp693267461-20-localhost-17) [c: s: r: x: t:localhost-17] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=7
+2024-03-12 02:58:01.382 INFO  (qtp693267461-45-localhost-18) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-18] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1710212269952} status=0 QTime=2
+2024-03-12 02:58:06.967 INFO  (qtp693267461-26-localhost-20) [c: s: r: x: t:localhost-20] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 02:58:06.967 INFO  (qtp693267461-25-localhost-22) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-22] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1710212269953} status=0 QTime=0
+2024-03-12 02:58:06.968 INFO  (qtp693267461-18-localhost-21) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-21] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1710212269952} status=0 QTime=1
+2024-03-12 02:58:06.972 INFO  (qtp693267461-23-localhost-19) [c: s: r: x: t:localhost-19] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=5
+2024-03-12 02:58:07.000 INFO  (qtp693267461-20-localhost-23) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-23] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1710212269952} status=0 QTime=1
+2024-03-12 02:58:10.077 ERROR (qtp693267461-18-localhost-24) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-24] o.a.s.s.SchemaManager Could not delete field => org.apache.solr.common.SolrException: The field 'stock' is not present in this schema, and so cannot be deleted.
+	at org.apache.solr.schema.ManagedIndexSchema.deleteFields(ManagedIndexSchema.java:525)
+org.apache.solr.common.SolrException: The field 'stock' is not present in this schema, and so cannot be deleted.
+	at org.apache.solr.schema.ManagedIndexSchema.deleteFields(ManagedIndexSchema.java:525) ~[?:?]
+	at org.apache.solr.schema.SchemaManager$OpType$7.perform(SchemaManager.java:364) ~[?:?]
+	at org.apache.solr.schema.SchemaManager.doOperations(SchemaManager.java:115) ~[?:?]
+	at org.apache.solr.schema.SchemaManager.performOperations(SchemaManager.java:95) ~[?:?]
+	at org.apache.solr.handler.SchemaHandler.handleRequestBody(SchemaHandler.java:90) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:226) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2884) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.executeCoreRequest(HttpSolrCall.java:875) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:561) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:262) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:219) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:249) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:215) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:213) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:195) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:598) ~[jetty-security-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1384) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1306) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:199) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149) ~[jetty-util-10.0.19.jar:10.0.19]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2024-03-12 02:58:10.077 ERROR (qtp693267461-18-localhost-24) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-24] o.a.s.h.RequestHandlerBase Client exception => org.apache.solr.api.ApiBag$ExceptionWithErrObject: error processing commands, errors: [{delete-field={name=stock}, errorMessages=[The field 'stock' is not present in this schema, and so cannot be deleted.
+]}], 
+org.apache.solr.api.ApiBag$ExceptionWithErrObject: error processing commands, errors: [{delete-field={name=stock}, errorMessages=[The field 'stock' is not present in this schema, and so cannot be deleted.
+]}], 
+	at org.apache.solr.handler.SchemaHandler.handleRequestBody(SchemaHandler.java:92) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:226) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2884) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.executeCoreRequest(HttpSolrCall.java:875) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:561) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:262) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:219) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:249) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:215) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:213) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:195) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:598) ~[jetty-security-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1384) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1306) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:199) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149) ~[jetty-util-10.0.19.jar:10.0.19]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2024-03-12 02:58:10.077 INFO  (qtp693267461-18-localhost-24) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-24] o.a.s.c.S.Request webapp=/solr path=/schema params={wt=json&_=1710212269953} status=400 QTime=13
+2024-03-12 02:58:13.973 INFO  (qtp693267461-20-localhost-27) [c: s: r: x: t:localhost-27] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 02:58:13.975 INFO  (qtp693267461-27-localhost-26) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-26] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1710212269952} status=0 QTime=1
+2024-03-12 02:58:13.979 INFO  (qtp693267461-24-localhost-25) [c: s: r: x: t:localhost-25] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=6
+2024-03-12 02:58:37.603 INFO  (qtp693267461-25-localhost-28) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-28] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commitWithin=1000&overwrite=true&wt=json&_=1710212293967}{} 0 16
+2024-03-12 02:58:37.603 ERROR (qtp693267461-25-localhost-28) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-28] o.a.s.h.RequestHandlerBase Client exception => org.apache.solr.common.SolrException: Cannot parse provided JSON: JSON Parse Error: char=<,position=1 AFTER='[<' BEFORE='delete><query>*:*</query></delete>]'
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:154)
+org.apache.solr.common.SolrException: Cannot parse provided JSON: JSON Parse Error: char=<,position=1 AFTER='[<' BEFORE='delete><query>*:*</query></delete>]'
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:154) ~[?:?]
+	at org.apache.solr.handler.loader.JsonLoader.load(JsonLoader.java:86) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:102) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:100) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:226) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2884) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.executeCoreRequest(HttpSolrCall.java:875) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:561) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:262) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:219) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:249) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:215) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:213) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:195) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:598) ~[jetty-security-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1384) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1306) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:199) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149) ~[jetty-util-10.0.19.jar:10.0.19]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2024-03-12 02:58:52.316 INFO  (qtp693267461-27-localhost-29) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-29] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={commitWithin=1000&overwrite=true&wt=json&_=1710212293967}{deleteByQuery=*:* (-1793287606543319040)} 0 44
+2024-03-12 02:58:53.328 INFO  (searcherExecutor-13-thread-1-processing-TOKOGUE_PRODUCT) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2024-03-12 02:58:53.337 INFO  (searcherExecutor-13-thread-1-processing-TOKOGUE_PRODUCT) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.c.SolrCore Registered new searcher autowarm time: 7 ms
+2024-03-12 02:58:54.346 INFO  (qtp693267461-18-localhost-32) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-32] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710212273039} status=0 QTime=0
+2024-03-12 02:58:54.346 INFO  (qtp693267461-25-localhost-30) [c: s: r: x: t:localhost-30] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 02:58:54.352 INFO  (qtp693267461-23-localhost-31) [c: s: r: x: t:localhost-31] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=6
+2024-03-12 02:58:56.287 INFO  (qtp693267461-20-localhost-34) [c: s: r: x: t:localhost-34] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 02:58:56.287 INFO  (qtp693267461-24-localhost-33) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-33] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710212273039} status=0 QTime=0
+2024-03-12 02:58:56.289 INFO  (qtp693267461-45-localhost-36) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-36] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1710212273039} hits=0 status=0 QTime=0
+2024-03-12 02:58:56.296 INFO  (qtp693267461-27-localhost-35) [c: s: r: x: t:localhost-35] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=9
+2024-03-12 03:01:00.653 INFO  (qtp693267461-25-localhost-37) [c: s: r: x: t:localhost-37] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 03:01:00.658 INFO  (qtp693267461-26-localhost-39) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-39] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1710212269952} status=0 QTime=1
+2024-03-12 03:01:00.658 INFO  (qtp693267461-18-localhost-40) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-40] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1710212269953} status=0 QTime=0
+2024-03-12 03:01:00.660 INFO  (qtp693267461-23-localhost-38) [c: s: r: x: t:localhost-38] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=7
+2024-03-12 03:01:00.684 INFO  (qtp693267461-25-localhost-41) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-41] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1710212269952} status=0 QTime=0
+2024-03-12 03:01:32.797 INFO  (qtp693267461-27-localhost-42) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-42] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={}{add=[5cf6dbd1-478a-4385-b3ec-69750e99cdbb (1793287774603837440), 165efff2-867b-4a69-a7eb-9d02cb1df54f (1793287774640537600), 968bfe1a-0eb3-40ad-88b9-e2e97d590b45 (1793287774641586176), d2ea61b3-4748-4aba-8db9-270dc40b5915 (1793287774642634752), 9597c5c6-6b91-450f-a445-4268257825f8 (1793287774642634753), cc73616b-13db-4d0a-84d8-0d562166665a (1793287774643683328), 933d82a9-7947-4156-b9a3-169394844c98 (1793287774643683329), 9a125a65-9748-463d-b356-9279960ae13e (1793287774644731904), e8a0a9b6-fb61-4ec3-87c9-88c4acc8d193 (1793287774644731905), 8209d3e6-9b16-40e6-b737-7800efb0291a (1793287774645780480), ... (1000 adds)]} 0 243
+2024-03-12 03:01:35.715 INFO  (searcherExecutor-13-thread-1-processing-TOKOGUE_PRODUCT) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2024-03-12 03:01:35.726 INFO  (searcherExecutor-13-thread-1-processing-TOKOGUE_PRODUCT) [c: s: r: x:TOKOGUE_PRODUCT t:] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-03-12 03:01:37.717 INFO  (qtp693267461-25-localhost-43) [c: s: r: x: t:localhost-43] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 03:01:37.718 INFO  (qtp693267461-21-localhost-45) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-45] o.a.s.c.S.Request webapp=/solr path=/admin/file params={wt=json&_=1710212497712} status=0 QTime=0
+2024-03-12 03:01:37.723 INFO  (qtp693267461-45-localhost-44) [c: s: r: x: t:localhost-44] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=6
+2024-03-12 03:01:37.734 INFO  (qtp693267461-23-localhost-46) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-46] o.a.s.c.S.Request webapp=/solr path=/admin/file params={file=lang&wt=json&_=1710212497712} status=0 QTime=5
+2024-03-12 03:01:39.183 INFO  (qtp693267461-26-localhost-48) [c: s: r: x: t:localhost-48] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 03:01:39.188 INFO  (qtp693267461-45-localhost-47) [c: s: r: x: t:localhost-47] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=4
+2024-03-12 03:01:39.196 INFO  (qtp693267461-21-localhost-49) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-49] o.a.s.c.S.Request webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1710212499178} status=0 QTime=13
+2024-03-12 03:01:40.057 INFO  (qtp693267461-27-localhost-51) [c: s: r: x: t:localhost-51] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 03:01:40.062 INFO  (qtp693267461-21-localhost-52) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-52] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1710212500053} status=0 QTime=2
+2024-03-12 03:01:40.063 INFO  (qtp693267461-26-localhost-50) [c: s: r: x: t:localhost-50] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=5
+2024-03-12 03:01:42.407 INFO  (qtp693267461-18-localhost-54) [c: s: r: x: t:localhost-54] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 03:01:42.410 INFO  (qtp693267461-45-localhost-55) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-55] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710212273039} status=0 QTime=0
+2024-03-12 03:01:42.413 INFO  (qtp693267461-27-localhost-53) [c: s: r: x: t:localhost-53] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=6
+2024-03-12 03:01:44.264 INFO  (qtp693267461-19-localhost-57) [c: s: r: x: t:localhost-57] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 03:01:44.266 INFO  (qtp693267461-23-localhost-56) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-56] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710212273039} status=0 QTime=1
+2024-03-12 03:01:44.270 INFO  (qtp693267461-18-localhost-58) [c: s: r: x: t:localhost-58] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=5
+2024-03-12 03:01:44.270 INFO  (qtp693267461-25-localhost-59) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-59] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1710212273039} hits=1000 status=0 QTime=1
+2024-03-12 04:32:06.490 INFO  (qtp693267461-52-localhost-61) [c: s: r: x: t:localhost-61] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 04:32:06.491 INFO  (qtp693267461-56-localhost-62) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-62] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710212273039} status=0 QTime=2
+2024-03-12 04:32:06.495 INFO  (qtp693267461-55-localhost-60) [c: s: r: x: t:localhost-60] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=5
+2024-03-12 04:32:06.495 INFO  (qtp693267461-27-localhost-63) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-63] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&start=0&q.op=OR&rows=10&useParams=&_=1710212273039} hits=1000 status=0 QTime=3
+2024-03-12 04:32:22.824 INFO  (qtp693267461-53-localhost-65) [c: s: r: x: t:localhost-65] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 04:32:22.826 INFO  (qtp693267461-26-localhost-66) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-66] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&start=9&q.op=OR&rows=10&useParams=&_=1710212273039} hits=1000 status=0 QTime=1
+2024-03-12 04:32:22.826 INFO  (qtp693267461-49-localhost-67) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-67] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710212273039} status=0 QTime=0
+2024-03-12 04:32:22.830 INFO  (qtp693267461-45-localhost-64) [c: s: r: x: t:localhost-64] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=6
+2024-03-12 04:32:32.820 INFO  (qtp693267461-49-localhost-68) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-68] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710212273039} status=0 QTime=0
+2024-03-12 04:32:32.820 INFO  (qtp693267461-50-localhost-69) [c: s: r: x: t:localhost-69] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 04:32:32.821 INFO  (qtp693267461-27-localhost-70) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-70] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&start=10&q.op=OR&rows=10&useParams=&_=1710212273039} hits=1000 status=0 QTime=0
+2024-03-12 04:32:32.827 INFO  (qtp693267461-23-localhost-71) [c: s: r: x: t:localhost-71] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=6
+2024-03-12 05:26:17.573 INFO  (qtp693267461-58-localhost-72) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-72] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&start=0&rows=10&wt=javabin&version=2} hits=1000 status=0 QTime=0
+2024-03-12 05:27:17.590 INFO  (qtp693267461-45-localhost-73) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-73] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&start=0&rows=10&wt=javabin&version=2} hits=1000 status=0 QTime=0
+2024-03-12 05:28:34.210 INFO  (qtp693267461-53-localhost-74) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-74] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&start=0&rows=10&wt=javabin&version=2} hits=1000 status=0 QTime=0
+2024-03-12 05:28:53.577 INFO  (qtp693267461-26-localhost-75) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-75] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&start=10&rows=10&wt=javabin&version=2} hits=1000 status=0 QTime=0
+2024-03-12 05:36:35.109 INFO  (qtp693267461-60-localhost-76) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-76] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&start=10&rows=10&wt=javabin&version=2} hits=1000 status=0 QTime=0
+2024-03-12 05:40:21.571 INFO  (qtp693267461-58-localhost-78) [c: s: r: x: t:localhost-78] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710212269899} status=0 QTime=0
+2024-03-12 05:40:21.573 INFO  (qtp693267461-26-localhost-77) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-77] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1710212269952} status=0 QTime=1
+2024-03-12 05:40:21.575 INFO  (qtp693267461-49-localhost-80) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-80] o.a.s.c.S.Request webapp=/solr path=/config params={wt=json&_=1710212269953} status=0 QTime=0
+2024-03-12 05:40:21.577 INFO  (qtp693267461-53-localhost-79) [c: s: r: x: t:localhost-79] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710212269899} status=0 QTime=6
+2024-03-12 05:40:21.599 INFO  (qtp693267461-45-localhost-81) [c: s: r: x:TOKOGUE_PRODUCT t:localhost-81] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1710212269952} status=0 QTime=2
+2024-03-12 15:25:14.276 INFO  (qtp693267461-59-localhost-84) [c: s: r: x: t:localhost-84] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710257114237} status=0 QTime=0
+2024-03-12 15:25:14.282 INFO  (qtp693267461-26-localhost-83) [c: s: r: x: t:localhost-83] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710257114237} status=0 QTime=5
+2024-03-12 15:25:14.289 INFO  (qtp693267461-66-localhost-85) [c: s: r: x: t:localhost-85] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710257114237} status=0 QTime=4
